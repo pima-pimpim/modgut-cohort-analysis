@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Cohort Analysis</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+    .menu {
+      padding: 10px;
+      background: #f0f0f0;
+      text-align: center;
+    }
+    .menu button {
+      margin: 5px;
+      padding: 10px 20px;
+    }
+    #contentFrame {
+      width: 100%;
+      height: calc(100vh - 60px); /* ปรับความสูงลบส่วนเมนู */
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <button onclick="loadPage('cohort_probiotic.html')">Cohort Probiotic</button>
+    <button onclick="loadPage('count_cohort.html')">Count Cohort</button>
+    <button onclick="loadPage('cumulative_revenue_by_cohort.html')">Cumulative Revenue by Cohort</button>
+    <button onclick="loadPage('cohort_retention_heatmap.html')">Cohort Retention Heatmap</button>
+    <button onclick="loadPage('repeat_customers_plot.html')">Repeat Customers</button>
+  </div>
+
+  <iframe id="contentFrame" src="cohort_probiotic.html"></iframe>
+
+  <script>
+    function loadPage(page) {
+      document.getElementById('contentFrame').src = page;
+    }
+  </script>
+</body>
+</html>

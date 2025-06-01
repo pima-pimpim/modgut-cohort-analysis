@@ -1,0 +1,1064 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cohort Table</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .table th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .table tr:hover {
+            background-color: #f1f1f1;
+        }
+        @media (max-width: 600px) {
+            .table thead {
+                display: none;
+            }
+            .table, .table tbody, .table tr, .table td {
+                display: block;
+                width: 100%;
+            }
+            .table tr {
+                margin-bottom: 15px;
+            }
+            .table td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+            .table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-weight: bold;
+                text-align: left;
+            }
+        }
+    </style>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: right;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+tr td:first-child, th:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+</style></head>
+<body>
+<table class="dataframe table table-striped table-bordered">
+<thead>
+<tr style="text-align: right;">
+<th>Cohort</th>
+<th>2023 Jan</th>
+<th>2023 Feb</th>
+<th>2023 Mar</th>
+<th>2023 Apr</th>
+<th>2023 May</th>
+<th>2023 Jun</th>
+<th>2023 Jul</th>
+<th>2023 Aug</th>
+<th>2023 Sep</th>
+<th>2023 Oct</th>
+<th>2023 Nov</th>
+<th>2023 Dec</th>
+<th>2024 Jan</th>
+<th>2024 Feb</th>
+<th>2024 Mar</th>
+<th>2024 Apr</th>
+<th>2024 May</th>
+<th>2024 Jun</th>
+<th>2024 Jul</th>
+<th>2024 Aug</th>
+<th>2024 Sep</th>
+<th>2024 Oct</th>
+<th>2024 Nov</th>
+<th>2024 Dec</th>
+<th>2025 Jan</th>
+<th>2025 Feb</th>
+<th>2025 Mar</th>
+<th>2025 Apr</th>
+<th>2025 May</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2023/01</td>
+<td title="Cohort: 2023/01, Month: 2023 Jan, Value: 59,624.34 THB">59,624.34</td>
+<td title="Cohort: 2023/01, Month: 2023 Feb, Value: 6,728.98 THB">6,728.98</td>
+<td title="Cohort: 2023/01, Month: 2023 Mar, Value: 3,364.49 THB">3,364.49</td>
+<td title="Cohort: 2023/01, Month: 2023 Apr, Value: 3,364.49 THB">3,364.49</td>
+<td title="Cohort: 2023/01, Month: 2023 May, Value: 2,428.04 THB">2,428.04</td>
+<td title="Cohort: 2023/01, Month: 2023 Jun, Value: 9,712.16 THB">9,712.16</td>
+<td title="Cohort: 2023/01, Month: 2023 Jul, Value: 2,803.74 THB">2,803.74</td>
+<td title="Cohort: 2023/01, Month: 2023 Aug, Value: 9,514.95 THB">9,514.95</td>
+<td title="Cohort: 2023/01, Month: 2023 Sep, Value: 1,214.02 THB">1,214.02</td>
+<td></td>
+<td title="Cohort: 2023/01, Month: 2023 Nov, Value: 3,529.91 THB">3,529.91</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/01, Month: 2024 Apr, Value: 2,523.36 THB">2,523.36</td>
+<td title="Cohort: 2023/01, Month: 2024 May, Value: 2,429.91 THB">2,429.91</td>
+<td title="Cohort: 2023/01, Month: 2024 Jun, Value: 3,528.45 THB">3,528.45</td>
+<td title="Cohort: 2023/01, Month: 2024 Jul, Value: 4,828.97 THB">4,828.97</td>
+<td></td>
+<td title="Cohort: 2023/01, Month: 2024 Sep, Value: 3,577.57 THB">3,577.57</td>
+<td></td>
+<td title="Cohort: 2023/01, Month: 2024 Nov, Value: 3,363.55 THB">3,363.55</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/01, Month: 2025 Feb, Value: 4,215.89 THB">4,215.89</td>
+<td title="Cohort: 2023/01, Month: 2025 Mar, Value: 2,336.45 THB">2,336.45</td>
+<td></td>
+<td title="Cohort: 2023/01, Month: 2025 May, Value: 2,335.51 THB">2,335.51</td>
+</tr>
+<tr>
+<td>2023/02</td>
+<td></td>
+<td title="Cohort: 2023/02, Month: 2023 Feb, Value: 15,886.00 THB">15,886.00</td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/02, Month: 2023 Jun, Value: 2,428.04 THB">2,428.04</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/02, Month: 2023 Sep, Value: 1,167.76 THB">1,167.76</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/03</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/03, Month: 2023 Mar, Value: 44,293.49 THB">44,293.49</td>
+<td title="Cohort: 2023/03, Month: 2023 Apr, Value: 1,214.02 THB">1,214.02</td>
+<td title="Cohort: 2023/03, Month: 2023 May, Value: 2,428.04 THB">2,428.04</td>
+<td title="Cohort: 2023/03, Month: 2023 Jun, Value: 3,642.06 THB">3,642.06</td>
+<td></td>
+<td title="Cohort: 2023/03, Month: 2023 Aug, Value: 3,550.47 THB">3,550.47</td>
+<td title="Cohort: 2023/03, Month: 2023 Sep, Value: 2,335.51 THB">2,335.51</td>
+<td title="Cohort: 2023/03, Month: 2023 Oct, Value: 2,335.51 THB">2,335.51</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/03, Month: 2024 Oct, Value: 6,934.58 THB">6,934.58</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/04</td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2023 Apr, Value: 29,621.52 THB">29,621.52</td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2023 Jun, Value: 6,024.30 THB">6,024.30</td>
+<td title="Cohort: 2023/04, Month: 2023 Jul, Value: 4,856.08 THB">4,856.08</td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2023 Sep, Value: 5,977.57 THB">5,977.57</td>
+<td title="Cohort: 2023/04, Month: 2023 Oct, Value: 3,548.60 THB">3,548.60</td>
+<td title="Cohort: 2023/04, Month: 2023 Nov, Value: 1,214.02 THB">1,214.02</td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2024 Jan, Value: 4,743.93 THB">4,743.93</td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2024 Mar, Value: 9,310.29 THB">9,310.29</td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2024 Jul, Value: 1,214.02 THB">1,214.02</td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2024 Nov, Value: 4,577.57 THB">4,577.57</td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2025 Jan, Value: 3,588.78 THB">3,588.78</td>
+<td></td>
+<td title="Cohort: 2023/04, Month: 2025 Mar, Value: 1,132.71 THB">1,132.71</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/05</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/05, Month: 2023 May, Value: 36,663.57 THB">36,663.57</td>
+<td title="Cohort: 2023/05, Month: 2023 Jun, Value: 6,070.10 THB">6,070.10</td>
+<td title="Cohort: 2023/05, Month: 2023 Jul, Value: 6,070.10 THB">6,070.10</td>
+<td title="Cohort: 2023/05, Month: 2023 Aug, Value: 13,076.64 THB">13,076.64</td>
+<td title="Cohort: 2023/05, Month: 2023 Sep, Value: 4,671.02 THB">4,671.02</td>
+<td title="Cohort: 2023/05, Month: 2023 Oct, Value: 2,334.58 THB">2,334.58</td>
+<td title="Cohort: 2023/05, Month: 2023 Nov, Value: 55,043.93 THB">55,043.93</td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/05, Month: 2024 Mar, Value: 4,731.78 THB">4,731.78</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/05, Month: 2025 Apr, Value: 1,242.99 THB">1,242.99</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/06</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/06, Month: 2023 Jun, Value: 108,053.32 THB">108,053.32</td>
+<td title="Cohort: 2023/06, Month: 2023 Jul, Value: 11,502.81 THB">11,502.81</td>
+<td title="Cohort: 2023/06, Month: 2023 Aug, Value: 3,374.78 THB">3,374.78</td>
+<td title="Cohort: 2023/06, Month: 2023 Sep, Value: 10,277.57 THB">10,277.57</td>
+<td title="Cohort: 2023/06, Month: 2023 Oct, Value: 6,914.95 THB">6,914.95</td>
+<td title="Cohort: 2023/06, Month: 2023 Nov, Value: 9,302.81 THB">9,302.81</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/06, Month: 2024 Feb, Value: 7,284.11 THB">7,284.11</td>
+<td title="Cohort: 2023/06, Month: 2024 Mar, Value: 13,097.20 THB">13,097.20</td>
+<td title="Cohort: 2023/06, Month: 2024 Apr, Value: 1,242.06 THB">1,242.06</td>
+<td title="Cohort: 2023/06, Month: 2024 May, Value: 4,886.92 THB">4,886.92</td>
+<td title="Cohort: 2023/06, Month: 2024 Jun, Value: 4,606.55 THB">4,606.55</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/06, Month: 2024 Sep, Value: 1,121.50 THB">1,121.50</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/06, Month: 2024 Dec, Value: 3,363.55 THB">3,363.55</td>
+<td></td>
+<td title="Cohort: 2023/06, Month: 2025 Feb, Value: 3,363.55 THB">3,363.55</td>
+<td title="Cohort: 2023/06, Month: 2025 Mar, Value: 1,242.06 THB">1,242.06</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/07</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/07, Month: 2023 Jul, Value: 94,702.86 THB">94,702.86</td>
+<td title="Cohort: 2023/07, Month: 2023 Aug, Value: 5,886.91 THB">5,886.91</td>
+<td title="Cohort: 2023/07, Month: 2023 Sep, Value: 9,342.99 THB">9,342.99</td>
+<td title="Cohort: 2023/07, Month: 2023 Oct, Value: 3,530.84 THB">3,530.84</td>
+<td title="Cohort: 2023/07, Month: 2023 Nov, Value: 1,214.02 THB">1,214.02</td>
+<td title="Cohort: 2023/07, Month: 2023 Dec, Value: 6,782.52 THB">6,782.52</td>
+<td></td>
+<td title="Cohort: 2023/07, Month: 2024 Feb, Value: 9,551.41 THB">9,551.41</td>
+<td title="Cohort: 2023/07, Month: 2024 Mar, Value: 2,391.59 THB">2,391.59</td>
+<td title="Cohort: 2023/07, Month: 2024 Apr, Value: 7,000.00 THB">7,000.00</td>
+<td title="Cohort: 2023/07, Month: 2024 May, Value: 2,429.91 THB">2,429.91</td>
+<td title="Cohort: 2023/07, Month: 2024 Jun, Value: 7,007.48 THB">7,007.48</td>
+<td title="Cohort: 2023/07, Month: 2024 Jul, Value: 8,229.91 THB">8,229.91</td>
+<td title="Cohort: 2023/07, Month: 2024 Aug, Value: 3,448.60 THB">3,448.60</td>
+<td></td>
+<td title="Cohort: 2023/07, Month: 2024 Oct, Value: 2,335.51 THB">2,335.51</td>
+<td title="Cohort: 2023/07, Month: 2024 Nov, Value: 4,476.42 THB">4,476.42</td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/07, Month: 2025 Mar, Value: 8,149.54 THB">8,149.54</td>
+<td title="Cohort: 2023/07, Month: 2025 Apr, Value: 3,726.17 THB">3,726.17</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/08</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/08, Month: 2023 Aug, Value: 86,539.22 THB">86,539.22</td>
+<td title="Cohort: 2023/08, Month: 2023 Sep, Value: 23,582.24 THB">23,582.24</td>
+<td title="Cohort: 2023/08, Month: 2023 Oct, Value: 6,070.10 THB">6,070.10</td>
+<td title="Cohort: 2023/08, Month: 2023 Nov, Value: 9,491.58 THB">9,491.58</td>
+<td title="Cohort: 2023/08, Month: 2023 Dec, Value: 6,924.30 THB">6,924.30</td>
+<td title="Cohort: 2023/08, Month: 2024 Jan, Value: 7,843.00 THB">7,843.00</td>
+<td title="Cohort: 2023/08, Month: 2024 Feb, Value: 13,228.05 THB">13,228.05</td>
+<td title="Cohort: 2023/08, Month: 2024 Mar, Value: 2,484.11 THB">2,484.11</td>
+<td title="Cohort: 2023/08, Month: 2024 Apr, Value: 4,485.98 THB">4,485.98</td>
+<td></td>
+<td title="Cohort: 2023/08, Month: 2024 Jun, Value: 12,926.58 THB">12,926.58</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/08, Month: 2025 Jan, Value: 5,698.13 THB">5,698.13</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2023/09</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/09, Month: 2023 Sep, Value: 93,565.42 THB">93,565.42</td>
+<td title="Cohort: 2023/09, Month: 2023 Oct, Value: 4,717.75 THB">4,717.75</td>
+<td title="Cohort: 2023/09, Month: 2023 Nov, Value: 2,428.04 THB">2,428.04</td>
+<td></td>
+<td title="Cohort: 2023/09, Month: 2024 Jan, Value: 1,214.02 THB">1,214.02</td>
+<td title="Cohort: 2023/09, Month: 2024 Feb, Value: 16,529.91 THB">16,529.91</td>
+<td title="Cohort: 2023/09, Month: 2024 Mar, Value: 3,578.51 THB">3,578.51</td>
+<td></td>
+<td title="Cohort: 2023/09, Month: 2024 May, Value: 7,000.00 THB">7,000.00</td>
+<td title="Cohort: 2023/09, Month: 2024 Jun, Value: 3,364.49 THB">3,364.49</td>
+<td title="Cohort: 2023/09, Month: 2024 Jul, Value: 1,242.06 THB">1,242.06</td>
+<td title="Cohort: 2023/09, Month: 2024 Aug, Value: 10,280.37 THB">10,280.37</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/09, Month: 2025 Apr, Value: 3,509.35 THB">3,509.35</td>
+<td></td>
+</tr>
+<tr>
+<td>2023/10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/10, Month: 2023 Oct, Value: 79,163.56 THB">79,163.56</td>
+<td title="Cohort: 2023/10, Month: 2023 Nov, Value: 25,512.91 THB">25,512.91</td>
+<td title="Cohort: 2023/10, Month: 2023 Dec, Value: 12,513.64 THB">12,513.64</td>
+<td title="Cohort: 2023/10, Month: 2024 Jan, Value: 15,445.80 THB">15,445.80</td>
+<td title="Cohort: 2023/10, Month: 2024 Feb, Value: 9,725.23 THB">9,725.23</td>
+<td title="Cohort: 2023/10, Month: 2024 Mar, Value: 4,334.02 THB">4,334.02</td>
+<td title="Cohort: 2023/10, Month: 2024 Apr, Value: 1,942.43 THB">1,942.43</td>
+<td title="Cohort: 2023/10, Month: 2024 May, Value: 11,456.46 THB">11,456.46</td>
+<td title="Cohort: 2023/10, Month: 2024 Jun, Value: 2,913.64 THB">2,913.64</td>
+<td title="Cohort: 2023/10, Month: 2024 Jul, Value: 5,962.61 THB">5,962.61</td>
+<td></td>
+<td title="Cohort: 2023/10, Month: 2024 Sep, Value: 6,465.41 THB">6,465.41</td>
+<td title="Cohort: 2023/10, Month: 2024 Oct, Value: 1,942.43 THB">1,942.43</td>
+<td title="Cohort: 2023/10, Month: 2024 Nov, Value: 6,309.71 THB">6,309.71</td>
+<td title="Cohort: 2023/10, Month: 2024 Dec, Value: 6,727.10 THB">6,727.10</td>
+<td></td>
+<td title="Cohort: 2023/10, Month: 2025 Feb, Value: 6,052.33 THB">6,052.33</td>
+<td title="Cohort: 2023/10, Month: 2025 Mar, Value: 4,447.67 THB">4,447.67</td>
+<td title="Cohort: 2023/10, Month: 2025 Apr, Value: 5,848.60 THB">5,848.60</td>
+<td title="Cohort: 2023/10, Month: 2025 May, Value: 2,316.83 THB">2,316.83</td>
+</tr>
+<tr>
+<td>2023/11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/11, Month: 2023 Nov, Value: 63,472.85 THB">63,472.85</td>
+<td title="Cohort: 2023/11, Month: 2023 Dec, Value: 5,875.70 THB">5,875.70</td>
+<td></td>
+<td title="Cohort: 2023/11, Month: 2024 Feb, Value: 14,659.83 THB">14,659.83</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/11, Month: 2024 May, Value: 3,070.11 THB">3,070.11</td>
+<td title="Cohort: 2023/11, Month: 2024 Jun, Value: 4,671.96 THB">4,671.96</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/11, Month: 2024 Sep, Value: 4,671.03 THB">4,671.03</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/11, Month: 2024 Dec, Value: 4,485.05 THB">4,485.05</td>
+<td title="Cohort: 2023/11, Month: 2025 Jan, Value: 6,728.97 THB">6,728.97</td>
+<td title="Cohort: 2023/11, Month: 2025 Feb, Value: 1,121.50 THB">1,121.50</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/11, Month: 2025 May, Value: 2,335.51 THB">2,335.51</td>
+</tr>
+<tr>
+<td>2023/12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2023/12, Month: 2023 Dec, Value: 102,231.81 THB">102,231.81</td>
+<td title="Cohort: 2023/12, Month: 2024 Jan, Value: 14,216.56 THB">14,216.56</td>
+<td title="Cohort: 2023/12, Month: 2024 Feb, Value: 17,505.62 THB">17,505.62</td>
+<td title="Cohort: 2023/12, Month: 2024 Mar, Value: 17,406.55 THB">17,406.55</td>
+<td title="Cohort: 2023/12, Month: 2024 Apr, Value: 11,743.93 THB">11,743.93</td>
+<td title="Cohort: 2023/12, Month: 2024 May, Value: 15,317.76 THB">15,317.76</td>
+<td title="Cohort: 2023/12, Month: 2024 Jun, Value: 13,313.09 THB">13,313.09</td>
+<td></td>
+<td title="Cohort: 2023/12, Month: 2024 Aug, Value: 13,710.29 THB">13,710.29</td>
+<td title="Cohort: 2023/12, Month: 2024 Sep, Value: 4,671.96 THB">4,671.96</td>
+<td></td>
+<td title="Cohort: 2023/12, Month: 2024 Nov, Value: 3,363.55 THB">3,363.55</td>
+<td></td>
+<td title="Cohort: 2023/12, Month: 2025 Jan, Value: 6,727.10 THB">6,727.10</td>
+<td title="Cohort: 2023/12, Month: 2025 Feb, Value: 2,335.51 THB">2,335.51</td>
+<td title="Cohort: 2023/12, Month: 2025 Mar, Value: 5,373.83 THB">5,373.83</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2024/01</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/01, Month: 2024 Jan, Value: 80,943.33 THB">80,943.33</td>
+<td title="Cohort: 2024/01, Month: 2024 Feb, Value: 18,094.41 THB">18,094.41</td>
+<td title="Cohort: 2024/01, Month: 2024 Mar, Value: 26,320.57 THB">26,320.57</td>
+<td title="Cohort: 2024/01, Month: 2024 Apr, Value: 16,471.94 THB">16,471.94</td>
+<td title="Cohort: 2024/01, Month: 2024 May, Value: 7,268.23 THB">7,268.23</td>
+<td title="Cohort: 2024/01, Month: 2024 Jun, Value: 20,000.47 THB">20,000.47</td>
+<td title="Cohort: 2024/01, Month: 2024 Jul, Value: 3,688.91 THB">3,688.91</td>
+<td title="Cohort: 2024/01, Month: 2024 Aug, Value: 2,390.65 THB">2,390.65</td>
+<td title="Cohort: 2024/01, Month: 2024 Sep, Value: 2,335.51 THB">2,335.51</td>
+<td title="Cohort: 2024/01, Month: 2024 Oct, Value: 7,003.74 THB">7,003.74</td>
+<td title="Cohort: 2024/01, Month: 2024 Nov, Value: 10,232.70 THB">10,232.70</td>
+<td></td>
+<td title="Cohort: 2024/01, Month: 2025 Jan, Value: 3,549.53 THB">3,549.53</td>
+<td title="Cohort: 2024/01, Month: 2025 Feb, Value: 9,342.05 THB">9,342.05</td>
+<td></td>
+<td title="Cohort: 2024/01, Month: 2025 Apr, Value: 2,383.18 THB">2,383.18</td>
+<td></td>
+</tr>
+<tr>
+<td>2024/02</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/02, Month: 2024 Feb, Value: 265,570.43 THB">265,570.43</td>
+<td title="Cohort: 2024/02, Month: 2024 Mar, Value: 11,999.08 THB">11,999.08</td>
+<td title="Cohort: 2024/02, Month: 2024 Apr, Value: 10,546.92 THB">10,546.92</td>
+<td title="Cohort: 2024/02, Month: 2024 May, Value: 26,034.61 THB">26,034.61</td>
+<td title="Cohort: 2024/02, Month: 2024 Jun, Value: 5,979.44 THB">5,979.44</td>
+<td title="Cohort: 2024/02, Month: 2024 Jul, Value: 6,713.50 THB">6,713.50</td>
+<td title="Cohort: 2024/02, Month: 2024 Aug, Value: 16,032.69 THB">16,032.69</td>
+<td title="Cohort: 2024/02, Month: 2024 Sep, Value: 4,521.67 THB">4,521.67</td>
+<td title="Cohort: 2024/02, Month: 2024 Oct, Value: 2,335.51 THB">2,335.51</td>
+<td title="Cohort: 2024/02, Month: 2024 Nov, Value: 2,335.51 THB">2,335.51</td>
+<td title="Cohort: 2024/02, Month: 2024 Dec, Value: 6,073.27 THB">6,073.27</td>
+<td></td>
+<td title="Cohort: 2024/02, Month: 2025 Feb, Value: 19,372.89 THB">19,372.89</td>
+<td title="Cohort: 2024/02, Month: 2025 Mar, Value: 2,392.52 THB">2,392.52</td>
+<td title="Cohort: 2024/02, Month: 2025 Apr, Value: 2,364.49 THB">2,364.49</td>
+<td title="Cohort: 2024/02, Month: 2025 May, Value: 2,335.51 THB">2,335.51</td>
+</tr>
+<tr>
+<td>2024/03</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/03, Month: 2024 Mar, Value: 184,024.34 THB">184,024.34</td>
+<td title="Cohort: 2024/03, Month: 2024 Apr, Value: 7,343.93 THB">7,343.93</td>
+<td title="Cohort: 2024/03, Month: 2024 May, Value: 30,442.07 THB">30,442.07</td>
+<td title="Cohort: 2024/03, Month: 2024 Jun, Value: 9,624.31 THB">9,624.31</td>
+<td title="Cohort: 2024/03, Month: 2024 Jul, Value: 2,391.58 THB">2,391.58</td>
+<td title="Cohort: 2024/03, Month: 2024 Aug, Value: 9,353.27 THB">9,353.27</td>
+<td></td>
+<td title="Cohort: 2024/03, Month: 2024 Oct, Value: 6,951.88 THB">6,951.88</td>
+<td title="Cohort: 2024/03, Month: 2024 Nov, Value: 2,289.25 THB">2,289.25</td>
+<td></td>
+<td title="Cohort: 2024/03, Month: 2025 Jan, Value: 2,334.58 THB">2,334.58</td>
+<td title="Cohort: 2024/03, Month: 2025 Feb, Value: 3,363.55 THB">3,363.55</td>
+<td title="Cohort: 2024/03, Month: 2025 Mar, Value: 8,112.15 THB">8,112.15</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2024/04</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/04, Month: 2024 Apr, Value: 65,545.46 THB">65,545.46</td>
+<td title="Cohort: 2024/04, Month: 2024 May, Value: 10,671.97 THB">10,671.97</td>
+<td title="Cohort: 2024/04, Month: 2024 Jun, Value: 9,298.13 THB">9,298.13</td>
+<td title="Cohort: 2024/04, Month: 2024 Jul, Value: 2,382.24 THB">2,382.24</td>
+<td title="Cohort: 2024/04, Month: 2024 Aug, Value: 5,924.30 THB">5,924.30</td>
+<td title="Cohort: 2024/04, Month: 2024 Sep, Value: 4,745.33 THB">4,745.33</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/04, Month: 2024 Dec, Value: 3,363.55 THB">3,363.55</td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/04, Month: 2025 Mar, Value: 3,508.39 THB">3,508.39</td>
+<td title="Cohort: 2024/04, Month: 2025 Apr, Value: 3,363.55 THB">3,363.55</td>
+<td></td>
+</tr>
+<tr>
+<td>2024/05</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/05, Month: 2024 May, Value: 70,598.16 THB">70,598.16</td>
+<td title="Cohort: 2024/05, Month: 2024 Jun, Value: 8,333.65 THB">8,333.65</td>
+<td title="Cohort: 2024/05, Month: 2024 Jul, Value: 4,785.04 THB">4,785.04</td>
+<td title="Cohort: 2024/05, Month: 2024 Aug, Value: 7,028.03 THB">7,028.03</td>
+<td title="Cohort: 2024/05, Month: 2024 Sep, Value: 9,361.68 THB">9,361.68</td>
+<td title="Cohort: 2024/05, Month: 2024 Oct, Value: 2,392.52 THB">2,392.52</td>
+<td></td>
+<td title="Cohort: 2024/05, Month: 2024 Dec, Value: 2,242.99 THB">2,242.99</td>
+<td title="Cohort: 2024/05, Month: 2025 Jan, Value: 4,605.61 THB">4,605.61</td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/05, Month: 2025 May, Value: 1,196.26 THB">1,196.26</td>
+</tr>
+<tr>
+<td>2024/06</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/06, Month: 2024 Jun, Value: 148,693.41 THB">148,693.41</td>
+<td title="Cohort: 2024/06, Month: 2024 Jul, Value: 7,037.38 THB">7,037.38</td>
+<td title="Cohort: 2024/06, Month: 2024 Aug, Value: 31,870.09 THB">31,870.09</td>
+<td title="Cohort: 2024/06, Month: 2024 Sep, Value: 13,940.19 THB">13,940.19</td>
+<td title="Cohort: 2024/06, Month: 2024 Oct, Value: 8,063.54 THB">8,063.54</td>
+<td title="Cohort: 2024/06, Month: 2024 Nov, Value: 6,867.29 THB">6,867.29</td>
+<td title="Cohort: 2024/06, Month: 2024 Dec, Value: 1,132.71 THB">1,132.71</td>
+<td title="Cohort: 2024/06, Month: 2025 Jan, Value: 2,383.18 THB">2,383.18</td>
+<td title="Cohort: 2024/06, Month: 2025 Feb, Value: 3,363.55 THB">3,363.55</td>
+<td></td>
+<td title="Cohort: 2024/06, Month: 2025 Apr, Value: 2,383.18 THB">2,383.18</td>
+<td></td>
+</tr>
+<tr>
+<td>2024/07</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/07, Month: 2024 Jul, Value: 209,764.05 THB">209,764.05</td>
+<td title="Cohort: 2024/07, Month: 2024 Aug, Value: 22,112.17 THB">22,112.17</td>
+<td title="Cohort: 2024/07, Month: 2024 Sep, Value: 39,868.21 THB">39,868.21</td>
+<td title="Cohort: 2024/07, Month: 2024 Oct, Value: 5,988.78 THB">5,988.78</td>
+<td title="Cohort: 2024/07, Month: 2024 Nov, Value: 30,816.49 THB">30,816.49</td>
+<td title="Cohort: 2024/07, Month: 2024 Dec, Value: 7,666.28 THB">7,666.28</td>
+<td title="Cohort: 2024/07, Month: 2025 Jan, Value: 2,336.45 THB">2,336.45</td>
+<td title="Cohort: 2024/07, Month: 2025 Feb, Value: 6,533.96 THB">6,533.96</td>
+<td title="Cohort: 2024/07, Month: 2025 Mar, Value: 6,774.77 THB">6,774.77</td>
+<td title="Cohort: 2024/07, Month: 2025 Apr, Value: 3,434.58 THB">3,434.58</td>
+<td></td>
+</tr>
+<tr>
+<td>2024/08</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/08, Month: 2024 Aug, Value: 147,098.79 THB">147,098.79</td>
+<td title="Cohort: 2024/08, Month: 2024 Sep, Value: 19,676.33 THB">19,676.33</td>
+<td title="Cohort: 2024/08, Month: 2024 Oct, Value: 10,613.08 THB">10,613.08</td>
+<td title="Cohort: 2024/08, Month: 2024 Nov, Value: 14,839.26 THB">14,839.26</td>
+<td title="Cohort: 2024/08, Month: 2024 Dec, Value: 32,360.10 THB">32,360.10</td>
+<td title="Cohort: 2024/08, Month: 2025 Jan, Value: 3,363.55 THB">3,363.55</td>
+<td></td>
+<td title="Cohort: 2024/08, Month: 2025 Mar, Value: 4,375.39 THB">4,375.39</td>
+<td title="Cohort: 2024/08, Month: 2025 Apr, Value: 5,700.94 THB">5,700.94</td>
+<td title="Cohort: 2024/08, Month: 2025 May, Value: 43,107.48 THB">43,107.48</td>
+</tr>
+<tr>
+<td>2024/09</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/09, Month: 2024 Sep, Value: 141,137.39 THB">141,137.39</td>
+<td title="Cohort: 2024/09, Month: 2024 Oct, Value: 30,190.68 THB">30,190.68</td>
+<td title="Cohort: 2024/09, Month: 2024 Nov, Value: 58,908.42 THB">58,908.42</td>
+<td title="Cohort: 2024/09, Month: 2024 Dec, Value: 19,582.03 THB">19,582.03</td>
+<td title="Cohort: 2024/09, Month: 2025 Jan, Value: 17,476.64 THB">17,476.64</td>
+<td title="Cohort: 2024/09, Month: 2025 Feb, Value: 14,911.21 THB">14,911.21</td>
+<td title="Cohort: 2024/09, Month: 2025 Mar, Value: 4,710.28 THB">4,710.28</td>
+<td title="Cohort: 2024/09, Month: 2025 Apr, Value: 6,728.98 THB">6,728.98</td>
+<td title="Cohort: 2024/09, Month: 2025 May, Value: 1,261.69 THB">1,261.69</td>
+</tr>
+<tr>
+<td>2024/10</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/10, Month: 2024 Oct, Value: 82,130.85 THB">82,130.85</td>
+<td title="Cohort: 2024/10, Month: 2024 Nov, Value: 21,005.60 THB">21,005.60</td>
+<td title="Cohort: 2024/10, Month: 2024 Dec, Value: 7,848.60 THB">7,848.60</td>
+<td title="Cohort: 2024/10, Month: 2025 Jan, Value: 11,380.38 THB">11,380.38</td>
+<td title="Cohort: 2024/10, Month: 2025 Feb, Value: 9,860.13 THB">9,860.13</td>
+<td title="Cohort: 2024/10, Month: 2025 Mar, Value: 15,985.98 THB">15,985.98</td>
+<td title="Cohort: 2024/10, Month: 2025 Apr, Value: 6,258.56 THB">6,258.56</td>
+<td title="Cohort: 2024/10, Month: 2025 May, Value: 2,364.48 THB">2,364.48</td>
+</tr>
+<tr>
+<td>2024/11</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/11, Month: 2024 Nov, Value: 78,729.93 THB">78,729.93</td>
+<td title="Cohort: 2024/11, Month: 2024 Dec, Value: 14,870.09 THB">14,870.09</td>
+<td title="Cohort: 2024/11, Month: 2025 Jan, Value: 15,038.71 THB">15,038.71</td>
+<td title="Cohort: 2024/11, Month: 2025 Feb, Value: 4,968.22 THB">4,968.22</td>
+<td title="Cohort: 2024/11, Month: 2025 Mar, Value: 4,719.63 THB">4,719.63</td>
+<td title="Cohort: 2024/11, Month: 2025 Apr, Value: 4,626.17 THB">4,626.17</td>
+<td></td>
+</tr>
+<tr>
+<td>2024/12</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2024/12, Month: 2024 Dec, Value: 81,862.42 THB">81,862.42</td>
+<td title="Cohort: 2024/12, Month: 2025 Jan, Value: 21,168.23 THB">21,168.23</td>
+<td title="Cohort: 2024/12, Month: 2025 Feb, Value: 10,103.73 THB">10,103.73</td>
+<td title="Cohort: 2024/12, Month: 2025 Mar, Value: 11,569.16 THB">11,569.16</td>
+<td title="Cohort: 2024/12, Month: 2025 Apr, Value: 5,756.07 THB">5,756.07</td>
+<td title="Cohort: 2024/12, Month: 2025 May, Value: 6,062.41 THB">6,062.41</td>
+</tr>
+<tr>
+<td>2025/01</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2025/01, Month: 2025 Jan, Value: 142,843.30 THB">142,843.30</td>
+<td title="Cohort: 2025/01, Month: 2025 Feb, Value: 34,549.50 THB">34,549.50</td>
+<td title="Cohort: 2025/01, Month: 2025 Mar, Value: 29,611.19 THB">29,611.19</td>
+<td title="Cohort: 2025/01, Month: 2025 Apr, Value: 18,465.42 THB">18,465.42</td>
+<td title="Cohort: 2025/01, Month: 2025 May, Value: 20,334.58 THB">20,334.58</td>
+</tr>
+<tr>
+<td>2025/02</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2025/02, Month: 2025 Feb, Value: 168,995.32 THB">168,995.32</td>
+<td title="Cohort: 2025/02, Month: 2025 Mar, Value: 30,536.35 THB">30,536.35</td>
+<td title="Cohort: 2025/02, Month: 2025 Apr, Value: 30,019.64 THB">30,019.64</td>
+<td title="Cohort: 2025/02, Month: 2025 May, Value: 4,671.02 THB">4,671.02</td>
+</tr>
+<tr>
+<td>2025/03</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2025/03, Month: 2025 Mar, Value: 250,631.94 THB">250,631.94</td>
+<td title="Cohort: 2025/03, Month: 2025 Apr, Value: 47,258.88 THB">47,258.88</td>
+<td title="Cohort: 2025/03, Month: 2025 May, Value: 27,497.64 THB">27,497.64</td>
+</tr>
+<tr>
+<td>2025/04</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2025/04, Month: 2025 Apr, Value: 189,052.37 THB">189,052.37</td>
+<td title="Cohort: 2025/04, Month: 2025 May, Value: 27,305.37 THB">27,305.37</td>
+</tr>
+<tr>
+<td>2025/05</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td title="Cohort: 2025/05, Month: 2025 May, Value: 217,067.32 THB">217,067.32</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
